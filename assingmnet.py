@@ -1,5 +1,3 @@
-from operator import truediv
-
 n= int(input("how many studetns data you want to enter:"))
 dict1 = {}
 for i in range (n):
