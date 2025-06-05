@@ -1,18 +1,10 @@
-n= int(input("how many studetns data you want to enter:"))
-dict1 = {}
-for i in range (n):
-    a= str(input("enter sno.{} studetn's name:".format(i+1)))
-    b= int(input("enter sno.{} student's marks:".format(i+1)))
-    dict1[a]=b
-print("your dictionary have been created successfully")
-
+dict1 = {"ankit":98,"akash":97,"aryan":86,"robin":94}
 def student_call():
     student_name= str(input("enter student's name:"))
-    if (student_name in dict1) == True:
-        print(student_name+"'s marks:",dict1[student_name])
+    student_name1=student_name.lower()
+    if (student_name1 in dict1) == True:
+        print(student_name+"'s marks:",dict1[student_name1])
     else:
         print("student not found")
 
 student_call()
-
-
